@@ -1,0 +1,163 @@
+body {
+  background: #f4f4f4;
+  font-family: sans-serif;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+nav {
+  background: #ceebff;
+  padding: 15px;
+  font-size: 23px;
+  margin-bottom: 50px;
+}
+nav a {
+  color: #445564;
+  margin-left: 10px;
+  margin-right: 35px;
+  text-decoration: none;
+}
+form {
+  margin: auto;
+  box-sizing: border-box;
+  width: 600px;
+  padding: 10px 15px;
+  background: #8ed294;
+  border-radius: 5px;
+}
+form .input-container {
+  padding: 10px;
+}
+form .input-container label {
+  display: block;
+  margin-bottom: 4px;
+  color: white;
+  font-size: 16px;
+  text-shadow: 0px 2px 1px #65ad6b;
+  font-family: 'Quicksand', sans-serif;
+}
+form .input-container input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: #d7ffdb;
+  box-shadow: 0 2px 0px #77bd7d;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: #757575;
+}
+form .input-container input:focus {
+  outline: none;
+  background: white;
+}
+form button {
+  display: block;
+  margin: 20px auto;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, #14a73e 0%, #66f771 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+form button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+form button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
+@media (max-width: 768px) {
+  form {
+    margin-bottom: 50px;
+    width: 90%;
+  }
+}
+.list {
+  background-color: #89bfd0;
+  width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+.list .card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 10px;
+  color: #222e38;
+}
+.list .card p:nth-child(1) {
+  width: 10%;
+}
+.list .card p:nth-child(2) {
+  width: 20%;
+}
+.list .card p:nth-child(3) {
+  width: 30%;
+}
+.list .card p:nth-child(4) {
+  width: 40%;
+}
+.list .card button {
+  cursor: pointer;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  outline: none;
+  overflow: hidden;
+  padding: 0 35px 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all 0.2s, box-shadow 0.08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100px;
+}
+.list .card button:disabled {
+  cursor: default;
+}
+.list .card button:focus {
+  box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset, rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0, rgba(50, 151, 211, 0.3) 0 0 0 4px;
+}
+@media (max-width: 1050px) {
+  .list {
+    width: 900px;
+  }
+  .list .card {
+    gap: 0px;
+  }
+}
+@media (max-width: 900px) {
+  .list {
+    width: 90%;
+  }
+  .list .card {
+    flex-direction: column;
+    padding-bottom: 25px;
+    border-bottom: 1px solid;
+  }
+}
